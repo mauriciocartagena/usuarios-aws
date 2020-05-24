@@ -23,7 +23,9 @@ class TableApi extends Component {
   }
 
   loadUsers() {
-    fetch("https://heroku-usuarios-api.herokuapp.com/usuarios")
+    fetch(
+      "https://te7yfcfogj.execute-api.us-east-2.amazonaws.com/default/apiRest"
+    )
       .then((response) => {
         return response.json();
       })
